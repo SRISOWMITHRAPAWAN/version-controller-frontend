@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Signup from './routes/signup';
+import Login from './routes/login';
+import Newrepo from './routes/newrepo';
+import Editrepo from './routes/editrepo';
+import Viewrepo from './routes/viewrepo';
+import Home from './routes/home';
+import Signin from './routes/Signin';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Login/>}/>
+      <Route path='/signin' element={<Signin/>}/>
+      <Route path='/signup' element={<Signup/>}/>
+      <Route path='/home' element={<Home/>}/>
+      <Route path='/newrepo' element={<Newrepo/>}/>
+      <Route path='/editrepo/:id' element={<Editrepo/>}/>
+      <Route path='/viewrepo/:id' element={<Viewrepo/>}/>
+    </Routes>
+    
+    </BrowserRouter>
   );
 }
 

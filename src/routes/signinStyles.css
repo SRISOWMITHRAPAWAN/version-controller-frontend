@@ -1,0 +1,79 @@
+.si{
+    width: 100%;
+    height: 100%;
+    
+
+    
+}
+
+.icon{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 3rem;
+
+
+
+}
+.Card{
+    width:"50rem";
+   height:"20rem";
+   background-color: rgba(27, 33, 40, 0.427);
+   padding: 1rem;
+   border-radius: 10px;
+   box-shadow: 10px;
+   
+
+
+}
+.mailid{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+    
+    
+}
+.password{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.submitbutton{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem; 
+}
+.register{
+    border: 1px solid white;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-weight: lighter;
+    border-radius: 5px;
+
+}
+.register a{
+color: blue;
+font-weight: lighter;
+}
+
+#email{
+    background-color:rgb(12, 12, 23) ;
+    border-radius: 8px;
+    height: 2.2rem;
+    
+    
+}
+#password{
+    background-color: rgb(12, 12, 23);
+    border-radius: 8px;
+    height: 2.2rem;
+    
+}
+input,select,textarea{
+    color: white;
+}
