@@ -22,7 +22,7 @@ function Viewrepo() {
     
     useEffect( async () => {
         try {
-            let repoData = await axios.get(`https://version-backend.onrender.com/employees/get/${params.id}`, {
+            let repoData = await axios.get(`https://v-c-s-backend.onrender.com/employees/get/${params.id}`, {
                 headers: {
                   accesstoken: window.localStorage.getItem("token"),
                 },

@@ -19,7 +19,7 @@ const Home = () => {
   
   async function fetchAll() {
     try {
-      let studentsData = await axios.get("https://version-backend.onrender.com/employees/get", {
+      let studentsData = await axios.get("https://v-c-s-backend.onrender.com/employees/get", {
         headers: {
           accesstoken: window.localStorage.getItem("token"),
         },
@@ -41,7 +41,7 @@ const Home = () => {
         "Are you sure, do you want to delete this repository?"
       );
       if (ask) {
-        await axios.delete(`https://version-backend.onrender.com/employees/delete/${id}`, {
+        await axios.delete(`https://v-c-s-backend.onrender.com/employees/delete/${id}`, {
           headers: {
             accesstoken: window.localStorage.getItem("token"),
           },

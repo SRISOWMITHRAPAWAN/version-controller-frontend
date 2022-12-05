@@ -53,7 +53,7 @@ const Signup = () => {
     
       try {
 
-      const res= await axios.post('https://version-backend.onrender.com/register/signup', values);
+      const res= await axios.post('https://v-c-s-backend.onrender.com/register/signup', values);
      console.log(res)
      alert('Account created succesfully')
       navigate('/signin');

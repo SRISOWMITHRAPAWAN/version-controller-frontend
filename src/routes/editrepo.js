@@ -21,7 +21,7 @@ const Editrepo = () => {
       try {
         
           await axios.put(
-            `https://version-backend.onrender.com/employees/update/${currentStudent}`,
+            `https://v-c-s-backend.onrender.com/employees/update/${currentStudent}`,
             values,
             {
               headers: {
@@ -42,7 +42,7 @@ const Editrepo = () => {
     useEffect( async () => {
       try {
         console.log(params.id)
-          let studetData = await axios.get(`http://localhost:3001/employees/get/${params.id}`, {
+          let studetData = await axios.get(`https://v-c-s-backend.onrender.com/employees/get/${params.id}`, {
               headers: {
                 accesstoken: window.localStorage.getItem("token"),
               },

@@ -20,7 +20,7 @@ const Newrepo = () => {
       setwait("Wait for a moment");
       try {
         await axios.post(
-          "https://version-backend.onrender.com/employees/create",
+          "https://v-c-s-backend.onrender.com/employees/create",
           values,
           {
             headers: {
